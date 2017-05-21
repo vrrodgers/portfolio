@@ -10,6 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170521173111) do
 
+  create_table "albums", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "title"
+    t.text     "description", limit: 65535
+    t.integer  "category_id"
+    t.string   "client"
+    t.string   "image_thumb"
+    t.string   "image_1"
+    t.string   "image_2"
+    t.string   "image_3"
+    t.string   "image_4"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.index ["category_id"], name: "index_albums_on_category_id", using: :btree
+  end
+
+  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "technolgies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.integer  "album_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["album_id"], name: "index_technolgies_on_album_id", using: :btree
+  end
+
+  add_foreign_key "albums", "categories"
+  add_foreign_key "technolgies", "albums"
 end
