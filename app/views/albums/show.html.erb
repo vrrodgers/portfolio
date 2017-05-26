@@ -1,0 +1,119 @@
+
+
+  
+    <!-- Portfolio-->
+<section class="module">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="portfolio-content">
+          <p><a href="<%= @album.image_1%>" title="<%= @album.title%>" rel="single-photo"><%= image_tag @album.image_1%></a></p>
+        
+          <p><a href="<%= @album.image_2 %>" title="<%= @album.title%>" rel="single-photo"><%= image_tag @album.image_2 %></a></p>
+        
+          <p><a href="<%= @album.image_3 %>" title="<%= @album.title%>" rel="single-photo"><%= image_tag @album.image_3 %></a></p>
+        
+          <p><a href="<%= @album.image_4 %>" title="<%= @album.title%>" rel="single-photo"><%= image_tag @album.image_4 %></a></p>
+
+        </div>
+      </div>
+      <div class="col-lg-4" data-sticky_parent>
+        <div class="portfolio-sidebar sticky-sidebar" data-sticky_column>
+          <h3 class="single-portfolio-title"><%= @album.title %></h3>
+          <h3 class="single-portfolio-title"><%= @album.description %>
+         
+          <div class="portfoli-details">
+            <ul>
+              <li>
+                <h5>Date:</h5> 15 May, 2015
+              </li>
+              <li>
+                <h5>Client:</h5><h5><%= @album.client %></h5>
+               </li>
+              <li>
+                <h5>Category</h5><%=@album.category_name%> <a href="#">Mockups</a>, <a href="#">Web</a>
+              </li>
+              <li>
+                <h5>Share:</h5>
+                <ul class="social-icons">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Portfolio end-->
+
+    <!-- Related Works-->
+<div class="wrapper">
+  <section class="module module-divider-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="text-uppercase text-center m-b-50">Related Works</h4>
+        </div>
+      </div>
+      <br>
+      <div class="row row-portfolio row-related-portfolio" date-portfolio-type="" data-columns="3" data-overlay="">
+        <div class="portfolio-item design undefined">
+          <div class="portfolio-wrapper">
+            <%= image_tag "img-2.jpg", width: "100%"%>
+            <div class="portfolio-overlay"></div>
+            <div class="portfolio-caption">
+              <h5 class="portfolio-title">Mutualismi</h5>
+            </div><a class="portfolio-link" href="portfolio-single.html"></a>
+          </div>
+        </div>
+        <div class="portfolio-item design undefined">
+          <div class="portfolio-wrapper">
+            <%= image_tag "img-2.jpg", width: "100%"%>
+            <div class="portfolio-overlay"></div>
+            <div class="portfolio-caption">
+              <h5 class="portfolio-title">The Perfume</h5>
+            </div><a class="portfolio-link" href="portfolio-single.html"></a>
+          </div>
+        </div>
+        <div class="portfolio-item design undefined">
+          <div class="portfolio-wrapper">
+            <%= image_tag "img-2.jpg", width: "100%"%>
+            <div class="portfolio-overlay"></div>
+            <div class="portfolio-caption">
+              <h5 class="portfolio-title">Bumblebee Icons</h5>
+            </div><a class="portfolio-link" href="portfolio-single.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Related Works end-->
+
+    <!-- Portfolio Navigation-->
+  <section class="module-sm module-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="ps-prev"><a href="#"><span class="arrows arrows-arrows-slim-left"></span></a></div>
+        </div>
+        <div class="col">
+          <div class="ps-all"><a class="h4" href="#">All Works</a></div>
+        </div>
+        <div class="col">
+          <div class="ps-next"><a href="#"><span class="arrows arrows-arrows-slim-right"></span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Portfolio Navigation end-->
+</div>
+<!-- Off canvas end-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+    

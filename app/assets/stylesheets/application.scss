@@ -1,20 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-@import "linea-arrows";
-@import "linea-icons";
-@import "owl.carousel";
-@import "magnific-popup";
-@import "vertical.min";
-@import "pace-theme-minimal";
-@import "animate";
-
-* {
-    -webkit-font-smoothing: antialiased;
-}
-
-html {
-    font-size: 100%;
-}
+@import "gritter";
 
 body {
     background-color: #fff;
@@ -57,23 +43,22 @@ iframe {
 
 .wrapper {
     position: relative;
-
 }
 
-html .layout1,
-body .layout1 {
+html .layout,
+body .layout {
     height: 100%;
     min-height: 100%;
     width: 100%;
 }
 
-.layout1 {
+.layout {
     opacity: 0;
     -webkit-transition: 1.7s opacity ease;
             transition: 1.7s opacity ease;
 }
 
-.layout1.fade-in {
+.layout.fade-in {
     opacity: 1;
 }
 
@@ -463,18 +448,18 @@ select.form-control-sm:not([size]):not([multiple]) {
     border-color: #4a90e2;
     color: #fff;
     /* &.btn-link {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        color: $background;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: $background;
 
-        &:hover,
-        &:focus {
-            background-color: transparent;
-            text-decoration: none;
-            color: darken($background, 5%);
-        }
-    } */
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      text-decoration: none;
+      color: darken($background, 5%);
+    }
+  } */
 }
 
 .btn.btn-brand:hover,
@@ -501,18 +486,18 @@ select.form-control-sm:not([size]):not([multiple]) {
     border-color: #ddd;
     color: #444;
     /* &.btn-link {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        color: $background;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: $background;
 
-        &:hover,
-        &:focus {
-            background-color: transparent;
-            text-decoration: none;
-            color: darken($background, 5%);
-        }
-    } */
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      text-decoration: none;
+      color: darken($background, 5%);
+    }
+  } */
 }
 
 .btn.btn-gray:hover,
@@ -539,18 +524,18 @@ select.form-control-sm:not([size]):not([multiple]) {
     border-color: #111;
     color: #fff;
     /* &.btn-link {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        color: $background;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: $background;
 
-        &:hover,
-        &:focus {
-            background-color: transparent;
-            text-decoration: none;
-            color: darken($background, 5%);
-        }
-    } */
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      text-decoration: none;
+      color: darken($background, 5%);
+    }
+  } */
 }
 
 .btn.btn-dark:hover,
@@ -577,18 +562,18 @@ select.form-control-sm:not([size]):not([multiple]) {
     border-color: #fff;
     color: #444;
     /* &.btn-link {
-        background: transparent;
-        border: 0;
-        padding: 0;
-        color: $background;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: $background;
 
-        &:hover,
-        &:focus {
-            background-color: transparent;
-            text-decoration: none;
-            color: darken($background, 5%);
-        }
-    } */
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      text-decoration: none;
+      color: darken($background, 5%);
+    }
+  } */
 }
 
 .btn.btn-white:hover,
@@ -1609,14 +1594,14 @@ body.off-canvas-sidebar-open:after {
     top: 0;
 }
 
-.layout1 {
+.layout {
     position: relative;
     -webkit-transition: left .2s cubic-bezier(.645, .045, .355, 1), 1.7s opacity ease;
             transition: left .2s cubic-bezier(.645, .045, .355, 1), 1.7s opacity ease;
     left: 0;
 }
 
-body.off-canvas-sidebar-open .layout1 {
+body.off-canvas-sidebar-open .layout {
     left: -270px;
 }
 
@@ -1982,7 +1967,7 @@ body.off-canvas-sidebar-open .layout1 {
     margin: 0 0 20px 0;
 }
 
-.st-sw-layout1 {
+.st-sw-layout {
     display: block;
     padding: 2px 0;
     font-weight: 400;
@@ -4372,8 +4357,4 @@ a[rel~="gallery"]:hover {
 .footer-copyright {
     border-top: 1px solid rgba(255, 255, 255, .05);
     padding: 20px 0;
-}
-/* --- [ Custom CSS ] --- */
-.nav_color{
-    background: #000;
 }

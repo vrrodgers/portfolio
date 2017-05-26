@@ -11,6 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery-2.2.4.min
+//= require custom
+//= require plugins
+//= require gritter
 //= require turbolinks
 //= require_tree .
